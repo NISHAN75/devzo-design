@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+/* common css */
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0E151D;
+}
+.container {
+  margin: 100px 50px;
+}
+.btn {
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #0cbe7e;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 0px 25px 25px 30px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+    background-color: gray;
+}
+.stn {
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: transparent;
+  color: gray;
+  padding: 15px 40px;
+  border-radius: 0px 25px 25px 30px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid gray;
+  transition: 5ms ease-in;
+}
+.stn:hover{
+  background-color: #0cbe7e;
+  color: #fff;
+  border: none;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+  /* .btn:active {
+    transform: translateY(-1px);
+  } */
+/* nav area design */
+nav {
+  display: grid;
+  grid-template-columns: 400px repeat(1, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+.logo-area span {
+  font-size: 40px;
+  font-weight: 800;
+  color: #000;
+}
+.nav-bar > ul {
+  display: flex;
+  column-gap: 40px;
+}
+.nav-bar > ul > li {
+  list-style: none;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+.nav-bar > ul > li > a:hover {
+  color: #0cbe7e;
+}
+/* dropdown menu */
+.dropdown {
+  display: none;
+  position: absolute;
+  background: rgba(122, 221, 186, 0.49);
+}
+.dropdown ul li {
+  list-style: none;
+  padding: 5px 30px;
+}
+.nav-bar ul li:hover .dropdown {
+  display: block;
+}
+.dropdown ul li a:hover {
+  color: #0cbe7e;
+}
+/* banner area desgin */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-banner-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-column-gap: 80px;
+}
+.top-banner-caption h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #0e151d;
+}
+.top-banner-caption p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #0e151d;
+  margin-bottom: 80px;
+}
+/* d-solution area design */
+.d-solution {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-column-gap: 50px;
+}
+.d-solution-img img {
+  width: 100%;
+  border-radius: 0px 0px 49px 0px;
+}
+.s-solution-icon i {
+  background-color: transparent;
+  padding: 20px 60px;
+  border: 2px solid #14C083;
+  border-radius: 1px 35px 35px 35px;
+  color: #14C083;
+  cursor: pointer;
+  outline: none;
+  font-size: 30px;
+  transition: 1s ease-in-out;
+}
+.s-solution-icon > i:hover{
+  background-color: #14C083;
+  color: #fff;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  transform: translateY(-5px);
+}
+.d-solution-info h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #0E151D;
+  margin-bottom: 30px;
+}
+.d-solution-info p {
+  color: gray;
+  font-size: 20px;
+  line-height: 35px;
+}
+/* what do area design */
+.what-top-caption.text-center h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.what-top-caption.text-center p  {
+ color: gray;
+}
+.what-do-iteam {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 35px;
+}
+.what-do-iteam-info{
+  padding: 35px 50px;
+  border-radius: 0px 40px 40px 40px;
+  transition: 1s ease-in-out;
+}
+.what-do-iteam-info:hover{
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.stn i {
+  margin-left: 15px;
+}
+.what-do-icon i {
+  background-color: transparent;
+  padding: 20px 40px;
+  border: 2px solid #14C083;
+  border-radius: 1px 35px 35px 35px;
+  color: #14C083;
+  cursor: pointer;
+  outline: none;
+  font-size: 30px;
+  transition: 1s ease-in-out;
+}
+.what-do-icon > i:hover{
+  background-color: #14C083;
+  color: #fff;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  transform: translateY(-5px);
+}
+.what-do-content h5 {
+  font-size: 25px;
+  font-weight: 600;
+  font-style: normal;
+}
+.what-do-content p {
+  font-size: 20px;
+  color: gray;
+}
